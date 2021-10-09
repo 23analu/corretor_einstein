@@ -1,0 +1,18 @@
+<!-- {% load static %} -->  <!--Caso existam arquivos estáticos na página-->
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Corretor de Relatórios</title>
+    <link rel="stylesheet" href="{% static '_css/style.css' %}">
+    <link rel="stylesheet" href="{% static '_css/alerts.css' %}">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="{% static '_js/django-ajax-status.js' %}"></script>
+</head>
+
+
+<body>
+    {% block base_content %} {% endblock %}
+</body>
+</html>
